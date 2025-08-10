@@ -5,6 +5,8 @@
 name: "[Windows x86_64] Build wheels and upload to GitHub Releases"
 
 on:
+  repository_dispatch:
+    types: [manual-trigger]
   workflow_call:
     inputs:
       flash-attn-version:
